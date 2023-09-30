@@ -1,0 +1,31 @@
+.formElements{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputClass {
+    width:90%;
+    margin: 5px 0 15px 0;
+    border-radius:10px;
+    line-height: 2.5rem; 
+    border: 1px solid #d6d6d6;
+    padding-left: 15px;
+}
+
+.submitBtn{
+    width: 90%;
+    line-height: 2.5rem;
+    border-radius: 5px;
+    background-color: #232742;
+    color: #fff;
+    font-family: '__Roboto_b26d20';
+    border: none;
+    cursor: pointer;
+
+}
+
+.submitBtn:hover {
+    background: rgb(255,83,121);
+    background: linear-gradient(90deg, rgba(255,83,121,1) 0%, rgba(255,92,95,1) 35%, rgba(255,144,71,1) 100%);
+    transition: all 0.1s ease-out;
+}

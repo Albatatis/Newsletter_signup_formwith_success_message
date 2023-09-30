@@ -1,0 +1,24 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-purple: hsl(235, 18%, 26%);
+}
+
+html,
+body {
+
+  background-color:  var(--dark-purple);
+
+}
+
+h1{
+  color: var(--dark-purple);
+  font-size: 3rem;
+}
+
+

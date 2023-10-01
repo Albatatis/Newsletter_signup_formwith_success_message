@@ -1,12 +1,14 @@
 "use client"
-
+import React, {useState} from "react";
 import formStyles from "./form.module.css"
 import { Formik } from 'formik';
 import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({ subsets: ["latin"],weight:["700"]})
 
-const Form = () => {
+const Form = ({setAddEmail}) => {
+
+
   return (
     <div className={formStyles.formContainer} style={roboto.style}>
       <Formik
@@ -23,10 +25,11 @@ const Form = () => {
          return errors;
        }}
        onSubmit={(values, { setSubmitting }) => {
-         setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
-           setSubmitting(false);
-         }, 400);
+        //  setTimeout(() => {
+        //    alert(JSON.stringify(values, null, 2));
+        //    setSubmitting(false);
+        //  }, 400);
+        setAddEmail(values.email)
        }}
      >
        {({
@@ -49,7 +52,7 @@ const Form = () => {
             //  style={{width:"90%", margin: "5px 0", borderRadius:'10px',lineHeight: "2.5rem", border: "2px solid "}} 
              className={formStyles.inputClass}
              style={{backgroundColor: errors.email && "#ffe8e5", color: errors.email && "#f77882", border: errors.email && "1px solid #c98e89"}}
-             onFocus={{color: "#f77882"}}
+            //  onFocus={{color: "#f77882"}}
              type="email"
              name="email"
              placeholder="email@company.com"

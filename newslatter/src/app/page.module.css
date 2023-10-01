@@ -18,11 +18,30 @@
   display: flex;
 }
 
+.thnxWrapper{
+  background-color: #fff;
+  border-radius: 25px;
+  /* padding: 10px 10px 5px 10px; */
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 400px;
+}
+
+.thnxWrapper h1{
+  line-height: 45px
+}
+
 .rightDiv{
   display: flex;
   justify-content: center;
   align-items: center;
   /* width: 45%; */
+}
+
+.imageClass{
+  height: 92%;
+  width: auto;
 }
 
 .leftDiv {
@@ -71,4 +90,15 @@
 }
 
 
+.dismissBtn{
+  width: 90%;
+  line-height: 3rem;
+  border-radius: 5px;
+  background-color: #232742;
+  color: #fff;
+  font-family: '__Roboto_b26d20';
+  border: none;
+  cursor: pointer;
+
+}
 

@@ -10,8 +10,8 @@
 }
 
 .wrapper {
-  width: 775px;
-  height: 80%;
+  /* width: 1440px; */
+  /* height: 80%; */
   background-color: #fff;
   border-radius: 25px;
   /* padding: 10px 10px 5px 10px; */
@@ -20,30 +20,39 @@
 
 .rightDiv{
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  width: 45%;
+  /* width: 45%; */
 }
 
 .leftDiv {
   display: flex;
   flex-direction: column;
-  padding: 4rem 1rem 1rem 3rem;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 1rem 3rem;
   font-size: 14px;
+  height: 85%;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 75px;
 }
 
 .leftDiv h1 {
-  font-size: 2.5rem;
+  font-size: 52px;
 }
 
 .subHeading {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 20px;
+  width: 90%;
 }
 
 .listDiv {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 

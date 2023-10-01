@@ -13,6 +13,9 @@ const robotoThnx = Roboto({ subsets: ["latin"], weight: ["700"] });
 export default function Home() {
   const [addEmail, setAddEmail] = useState("");
 
+  const handleDismiss = () => {
+    setAddEmail("")
+  }
   return (
     <section className={styles.container}>
       
@@ -24,7 +27,7 @@ export default function Home() {
             A confirmation email has been sent to <strong>{addEmail}. {""}</strong> 
             Please open it and click the button inside to confirm your subscription.
             </p>
-            <button style={{fontWeight: 200,width: "100%"}} className={styles.dismissBtn}>Dismiss message</button>
+            <button onClick={handleDismiss} style={{fontWeight: 200,width: "100%"}} className={styles.dismissBtn}>Dismiss message</button>
           </div>
         ) : (
           <div className={styles.wrapper}>
